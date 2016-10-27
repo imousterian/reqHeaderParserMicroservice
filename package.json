@@ -1,0 +1,17 @@
+{
+  "engines": {
+    "node": "6.7.0"
+  },
+  "name": "req-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mvsergeyeva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.14.0"
+  }
+}

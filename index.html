@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Request header parser microservice</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">
+      Request Header Parser Microservice
+    </h1>
+    <blockquote>User story:
+    <ul>
+      I can get the IP address, language and operating system for my browser
+    </ul>
+    </blockquote>
+    <h3> Example usage: </h3>
+    <code>https://req-header-parserly.herokuapp.com/api/whoami</code>
+    <br>
+    <h3>Example output: </h3>
+    <code>
+      {
+        ipaddress: "73.252.138.84",
+        language: "en-US",
+        software: "Macintosh; Intel Mac OS X 10_12_0"
+      }
+    </code>
+  </div>
+</body>
+</html>
+

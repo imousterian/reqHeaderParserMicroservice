@@ -9,9 +9,10 @@ class Server {
         this.port = port;
 
         this.app.use((req, res, next) => {
+            const regExp = /\(([^)]+)\)/;
+            req.software = regExp.exec(req.headers['user-agent'])[1];
             req.language = req.headers['accept-language'].split(",")[0];
-            req.software = req.headers['user-agent'];
-            req.ipaddress = req.ip;
+            req.ipaddress = req.ip.split(':')[3];
             next();
         });
 
